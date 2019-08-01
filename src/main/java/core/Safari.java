@@ -46,10 +46,10 @@ public class Safari {
 		System.out.println("===================================================");
 		System.out.println("Page URI: " + driver.getCurrentUrl());
 		System.out.println("Page Title: " + driver.getTitle());
-		System.out.println("First Name: " + driver.findElement(By.id(p.getProperty("fname_id"))).getText());
-		System.out.println("Last Name: " + driver.findElement(By.id(p.getProperty("lname_id"))).getText());
-		System.out.println("Email: " + driver.findElement(By.id(p.getProperty("email_id"))).getText());
-		System.out.println("Phone: " + driver.findElement(By.id(p.getProperty("phone_id"))).getText());
+		System.out.println("First Name: " + driver.findElement(By.id(p.getProperty("fname_id"))).getText().trim());
+		System.out.println("Last Name: " + driver.findElement(By.id(p.getProperty("lname_id"))).getText().trim());
+		System.out.println("Email: " + driver.findElement(By.id(p.getProperty("email_id"))).getText().trim());
+		System.out.println("Phone: " + driver.findElement(By.id(p.getProperty("phone_id"))).getText().trim());
 		
 		driver.quit();
 

@@ -46,10 +46,10 @@ public class HtmlUnit {
         System.out.println("Page URI: " + confirmation_page.getUrl());
         System.out.println("Page Title: " + confirmation_page.getTitleText());
         
-        System.out.println("First Name: " + confirmation_page.getHtmlElementById(p.getProperty("fname_id")).getTextContent());
-        System.out.println("Last Name: " + confirmation_page.getHtmlElementById(p.getProperty("lname_id")).getTextContent());
-        System.out.println("Email: " + confirmation_page.getHtmlElementById(p.getProperty("phone_id")).getTextContent());
-        System.out.println("Phone: " + confirmation_page.getHtmlElementById(p.getProperty("phone_id")).getTextContent());
+        System.out.println("First Name: " + confirmation_page.getHtmlElementById(p.getProperty("fname_id")).getTextContent().trim());
+        System.out.println("Last Name: " + confirmation_page.getHtmlElementById(p.getProperty("lname_id")).getTextContent().trim());
+        System.out.println("Email: " + confirmation_page.getHtmlElementById(p.getProperty("phone_id")).getTextContent().trim());
+        System.out.println("Phone: " + confirmation_page.getHtmlElementById(p.getProperty("phone_id")).getTextContent().trim());
         
         driver.close();
 	}
